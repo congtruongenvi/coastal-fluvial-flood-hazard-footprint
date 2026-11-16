@@ -8,6 +8,20 @@ hazard maps systematically under-represent.
 
 ---
 
+## Status
+
+**Working hazard-mapping pipeline, connectivity-constrained, pre-results stage.** The
+flood-fill connectivity logic — the part that separates a defensible footprint from a
+naive elevation-below-water mask — is implemented and validated (12 self-tests). Real
+layers (DEM, tide, discharge, population) are **not committed**; outputs shown in figures
+are generated from synthetic fixtures. Real-data processing requires the case directory
+under `data/raw/<case>/` described in `data/README.md`.
+
+This repository demonstrates **hierarchical method implementation and verification**,
+not a finished hazard atlas. Do not cite `figures/` outputs as observed inundation.
+
+---
+
 ## The problem this addresses
 
 Standard flood hazard mapping treats the two drivers separately:
